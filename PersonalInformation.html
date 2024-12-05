@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information Form</title>
+    <link rel="stylesheet" href="PersonalInformation.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Personal Information Form</h1>
+        <form id="personalInfoForm">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+                <label for="preferredName">Preferred Name</label>
+                <input type="text" id="preferredName" placeholder="Preferred Name">
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <div>
+                    <input type="radio" name="gender" value="Male" id="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="Female" id="female" required>
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="birthdate">Birthdate</label>
+                <select id="birthMonth" required>
+                    <option value="" disabled selected>Month</option>
+                    <!-- Populate options in JS -->
+                </select>
+                <select id="birthDay" required>
+                    <option value="" disabled selected>Day</option>
+                    <!-- Populate options in JS -->
+                </select>
+                <select id="birthYear" required>
+                    <option value="" disabled selected>Year</option>
+                    <!-- Populate options in JS -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="example@mail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="homeNumber">Home Number</label>
+                <input type="tel" id="homeNumber" placeholder="Home Number">
+            </div>
+            <div class="form-group">
+                <label for="cellNumber">Cell Number</label>
+                <input type="tel" id="cellNumber" placeholder="Cell Number">
+            </div>
+            <div class="form-group">
+                <label>Permanent Address</label>
+                <input type="text" id="permanentAddress" placeholder="Permanent Address">
+            </div>
+            <div class="form-group">
+                <label for="streetAddress">Street Address</label>
+                <input type="text" id="streetAddress1" placeholder="Street Address">
+                <input type="text" id="streetAddress2" placeholder="Street Address Line 2">
+                <input type="text" id="city" placeholder="City">
+                <input type="text" id="state" placeholder="State">
+                <input type="text" id="zipcode" placeholder="Zip Code">
+                <select id="country" required>
+                    <option value="" disabled selected>Country</option>
+            
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Are you authorized to work in the United States?</label>
+                <div>
+                    <input type="radio" name="authorized" value="Yes" id="yes" required>
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="authorized" value="No" id="no" required>
+                    <label for="no">No</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Available Work Days</label>
+                <div id="workDays">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="workHours">Available Work Hours</label>
+                <input type="text" id="workHours" placeholder="e.g., 9 AM - 5 PM">
+            </div>
+            <h3>Education Details</h3>
+            <div id="educationSection">
+                <div class="form-group">
+                    <label for="collegeName">College Name</label>
+                    <input type="text" id="collegeName" placeholder="College Name">
+                </div>
+                <div class="form-group">
+                    <label for="collegeAddress">College Address</label>
+                    <input type="text" id="collegeAddress" placeholder="College Address">
+                </div>
+                <div class="form-group">
+                    <label for="major">Major</label>
+                    <input type="text" id="major" placeholder="Major">
+                </div>
+                <div class="form-group">
+                    <label for="year">Year of Graduation</label>
+                    <input type="text" id="year" placeholder="Graduation Year">
+                </div>
+            </div>
+            
+        </form>
+    </div>
+    <script src="PersonalInformation.js"></script>
+</body>
+</html>
